@@ -1,0 +1,12 @@
+
+## Team Essentials ##
+#####################
+.vscode/settings.json
+.vscode/team-essentials/state.json
+.vscode/
+
+## Custom
+HotstringsSecret.ahk
+Docs/
+Utils/
+Samples/
