@@ -1,4 +1,7 @@
-**Resources**
+**Inspiration**
 
 * [Awesome AutoHotkey](https://github.com/ahkscript/awesome-AutoHotkey)
-* [AutoHotKey topic search](https://github.com/topics/autohotkey?l=autohotkey&o=desc&s=stars)
+* [AutoHotkey topic search](https://github.com/topics/autohotkey?l=autohotkey&o=desc&s=stars)
+* [AutoHotkey trending](https://github.com/trending/autohotkey)
+* [denolfe](https://github.com/denolfe/AutoHotkey)
+* [TaranVH](https://github.com/TaranVH/2nd-keyboard)
