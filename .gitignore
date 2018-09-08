@@ -6,7 +6,9 @@
 .vscode/
 
 ## Custom
-HotstringsSecret.ahk
 Docs/
 Utils/
 Samples/
+Scripts/Backup.ahk
+Scripts/HotstringsSecret.ahk
+Scripts/Work/
