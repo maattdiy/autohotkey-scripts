@@ -10,7 +10,10 @@ CapsLock & s::
 return
 
 ; Notes
-CapsLock & \::Run, chrome.exe -kiosk --profile-directory=Default --app-id=fghmlbbaklalcbeiakgffpodbokndpcj
+CapsLock & \::
+CapsLock & Tab::
+    Run, chrome.exe -kiosk --profile-directory=Default --app-id=fghmlbbaklalcbeiakgffpodbokndpcj
+return
 
 ; Calculator
 NumLock::DoubleTapRun("calc")
@@ -34,6 +37,7 @@ return
 
 ; Notepad++
 CapsLock & Shift::
+CapsLock & Ctrl::
     If WinExist("ahk_exe notepad++.exe")
         WinActivate
     else
@@ -60,6 +64,7 @@ CapsLock & w::Run, chrome.exe -kiosk --profile-directory=Default --app-id=hnpfjn
 CapsLock & Space::
     CopyToClipboard2()
     Run, C:\Program Files (x86)\Notepad++\notepad++.exe %Clipboard%
+return
 #if
 
 ; Copy

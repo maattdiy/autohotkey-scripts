@@ -25,7 +25,7 @@ RWin::Send, !{Tab}
 ; Minimize
 #IfWinNotActive, ahk_class WorkerW
 CapsLock & Down::WinMinimize, A
-#If
+#IfWinNotActive
 
 ; Close
 CapsLock & x::Send, !{F4}

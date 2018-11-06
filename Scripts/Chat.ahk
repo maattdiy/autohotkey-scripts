@@ -16,7 +16,7 @@
 return
 
 #If Not WinDev()
-F9::Send, ?{enter}
+;F9::Send, ?{enter}
 F10::Send, Ok{enter}
 F11::Send, :{+}1:{enter} ; Like
 #if

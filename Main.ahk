@@ -22,6 +22,7 @@ SetTitleMatchMode 2
 Load()
 
 ; Includes (Scripts)
+#Include Scripts\Secret.ahk
 #Include Scripts\AHK.ahk
 #Include Scripts\Backup.ahk
 #Include Scripts\Browser.ahk
@@ -40,6 +41,7 @@ Load()
 #Include Scripts\ExtraKeyboards.ahk
 
 ; Includes (Work scripts)
+#Include Scripts\Work\HotstringsSecret.ahk
 #Include Scripts\Work\Shortcuts.ahk
 #Include Scripts\Work\SQL.ahk
 #Include Scripts\Work\TS.ahk

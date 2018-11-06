@@ -23,13 +23,15 @@ return
 return
 
 ; Ping
-:*:;pi::
-    Send, ping 10.1.1. -t{Right 3}
-return
+:*:;pi10::ping 10.1.1.
+:*:;pi19::ping 192.168.1.
 
-; AutoHotkey
+;IPs
+:*:;\19::\\192.168.0.50\
+:*:;\10::\\10.1.1.
+
+; Favorite softwares
 :*:;ah::autohotkey{Space}
 :*:;ak::autohotkey{Space}
-
-; Directory Opus
 :*:;op::directory opus{Space}
+:*:;ha::Home Assistant

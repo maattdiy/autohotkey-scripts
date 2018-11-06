@@ -103,3 +103,11 @@ CopyToClipboard2() {
     Send, ^+c
     ClipWait
 }
+
+RunTS(path, pwd, name) {
+    NotifyEx("TS", name)
+    Run, %path%
+    WinWaitActive, ahk_exe CredentialUIBroker.exe, , 7
+    Clipboard = %pwd%
+    Send, %pwd%{Enter}
+}
