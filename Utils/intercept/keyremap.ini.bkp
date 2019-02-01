@@ -1,0 +1,8 @@
+[7]
+device=HID\VID_0E8F&PID_0022&REV_0210&MI_00
+trigger=47,0,0
+combo=58,0,0|47,0,0|47,0,1|58,0,1
+[4]
+device=HID\VID_0E8F&PID_0022&REV_0210&MI_00
+trigger=4b,0,0
+combo=58,0,0|4b,0,0|4b,0,1|58,0,1

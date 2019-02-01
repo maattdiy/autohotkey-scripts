@@ -5,6 +5,7 @@
 #SingleInstance, Force
 #NoEnv
 
+global A_AppPath := "C:\Temp\Clipboard Text.txt"
 global A_Text := ""
 
 ; ================================================================================
@@ -13,8 +14,8 @@ global A_Text := ""
 ; ================================================================================
 
 ; Check for exclusive keyboard driver
-;if FileExist("C:\Windows\System32\drivers\keyboard.sys")
-;    Run, %A_ScriptDir%\Utils\intercept\intercept.exe /apply, %A_ScriptDir%\Utils\intercept, Hide
+if FileExist("C:\Windows\System32\drivers\keyboard.sys")
+    Run, %A_ScriptDir%\Utils\intercept\intercept.exe /apply, %A_ScriptDir%\Utils\intercept, Hide
 
 ; ================================================================================
 ; Keys mapping
@@ -34,9 +35,10 @@ Numpad7::AddKey("7")
 Numpad8::AddKey("8")
 Numpad9::AddKey("9")
 Numpad0::AddKey("0")
-NumpadEnter::ProccessKeys()
+NumpadEnter::ProcessKeys()
 NumpadClear::RemoveKey()
 NumpadSub::RemoveKey()
+BackSpace::RemoveKey()
 #if
 
 ; ================================================================================
@@ -55,12 +57,13 @@ RemoveKey() {
     }
 }
 
-ProccessKeys() {
+ProcessKeys() {
     SoundBeep
     Register()
     A_Text := ""
 }
 
 Register() {
-    ;obj := ComObjCreate("InternetExplorer.Application")
+    Clipboard := A_Text
+    Run %A_AppPath%
 }
