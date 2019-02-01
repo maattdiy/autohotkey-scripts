@@ -20,3 +20,5 @@ return
 F10::Send, Ok{enter}
 F11::Send, :{+}1:{enter} ; Like
 #if
+
+:*:;ob::ok, obrigado{enter}

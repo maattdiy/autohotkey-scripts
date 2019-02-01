@@ -21,7 +21,7 @@ return
 
 ; Login
 #If WinActive("Home Assistant")
-F7::Send, hass{Tab}hass2580>{Enter}
+F7::Send, hass{Tab}%A_HASS_PWD%{Enter}
 #If
 
 ; ================================================================================

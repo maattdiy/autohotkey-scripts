@@ -18,7 +18,7 @@ CapsLock & 9::
     SendInput, netsh interface ip set dns "Wi-Fi" static 192.168.0.50 primary{enter}
 return
 
-; Show network adapter
+; Show network adapters
 CapsLock & 0::Run ncpa.cpl
 
 ; Cancel screen flipping

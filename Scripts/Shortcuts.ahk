@@ -16,7 +16,7 @@ CapsLock & Tab::
 return
 
 ; Calculator
-NumLock::DoubleTapRun("calc")
+;NumLock::DoubleTapRun("calc")
 
 ; Cmd
 CapsLock & 3::Run, cmd
@@ -58,12 +58,16 @@ CapsLock & w::Run, chrome.exe -kiosk --profile-directory=Default --app-id=hnpfjn
 ; ================================================================================
 ; Utils
 ; ================================================================================
+; ================================================================================
+; Utils
+; ================================================================================
 
 ; Edit file in Notepad++
+
 #if WinActive("ahk_class dopus.lister")
 CapsLock & Space::
     CopyToClipboard2()
-    Run, C:\Program Files (x86)\Notepad++\notepad++.exe %Clipboard%
+    Run, C:\Program Files (x86)\Notepad++\notepad++.exe "%Clipboard%"
 return
 #if
 
