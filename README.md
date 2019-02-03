@@ -1,4 +1,6 @@
-**Inspiration**
+:hash: :sparkles: My AutoHotKey scripts for automation, hotstrings and others productivity hacks.
+  
+## Inspiration
 
 * [Awesome AutoHotkey](https://github.com/ahkscript/awesome-AutoHotkey)
 * [AutoHotkey topic search](https://github.com/topics/autohotkey?l=autohotkey&o=desc&s=stars)
