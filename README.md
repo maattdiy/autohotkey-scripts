@@ -1,4 +1,7 @@
-:hash: :sparkles: My AutoHotKey scripts for automation, hotstrings and others productivity hacks.
+![](https://img.shields.io/github/last-commit/maattdiy/autohotkey-scripts.svg?style=flat)
+![](https://img.shields.io/github/languages/code-size/maattdiy/autohotkey-scripts.svg?style=flat)
+
+My AutoHotKey scripts for automation, hotstrings and others productivity hacks.
   
 ## Inspiration
 
