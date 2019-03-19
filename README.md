@@ -8,13 +8,9 @@ See also: [setup-scripts](https://github.com/maattdiy/setup-scripts)
 
 Run cmd as admin (_try Win+X A or Start > cmd and Ctrl+Shift+Enter_) and then the following commands:
 
-**Install [Chocolatey](https://chocolatey.org/)**
+**Install [Chocolatey](https://chocolatey.org/)** and **development tools** (AutoHotKey, VS Code and plugins)
   
-`@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
-  
-**Install development tools** (Notepad++, AutoHotKey, VS Code and plugins)
-
-`@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "choco feature enable -n allowGlobalConfirmation;choco install notepadplusplus.install;choco install autohotkey.install;choco install vscode;choco install vscode-icons;choco install vscode-autohotkey;"`
+`@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin" && @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "choco feature enable -n allowGlobalConfirmation;cinst autohotkey.install;cinst vscode;cinst vscode-icons;cinst vscode-autohotkey"`
 
 ## Configuration
 * Create shortcut of Startup.ahk in _shell:startup_
