@@ -2,7 +2,7 @@
 ![](https://img.shields.io/github/languages/code-size/maattdiy/autohotkey-scripts.svg?style=flat)
 
 My AutoHotKey scripts for automation, hotstrings and others productivity hacks.  
-See also: [win-scripts](https://github.com/maattdiy/win-scripts)
+See also: [setup-scripts](https://github.com/maattdiy/setup-scripts)
 
 ## Development setup
 
