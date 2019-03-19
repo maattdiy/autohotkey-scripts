@@ -22,7 +22,6 @@ SetTitleMatchMode 2
 Load()
 
 ; Includes (Scripts)
-#Include Scripts\Secret.ahk
 #Include Scripts\AHK.ahk
 #Include Scripts\Backup.ahk
 #Include Scripts\Browser.ahk
@@ -31,7 +30,6 @@ Load()
 #Include Scripts\Desktop.ahk
 #Include Scripts\HASS.ahk
 #Include Scripts\Hotstrings.ahk
-#Include Scripts\HotstringsSecret.ahk
 #Include Scripts\Info.ahk
 #Include Scripts\Lock.ahk
 #Include Scripts\Media.ahk
@@ -41,10 +39,15 @@ Load()
 #Include Scripts\ExtraKeyboards.ahk
 
 ; Includes (Work scripts)
-#Include Scripts\Work\HotstringsSecret.ahk
+#Include Scripts\Work\Projects.ahk
 #Include Scripts\Work\Shortcuts.ahk
 #Include Scripts\Work\SQL.ahk
 #Include Scripts\Work\TS.ahk
+
+; Includes (Secrets)
+#Include Scripts\Secret.ahk
+#Include Scripts\HotstringsSecret.ahk
+#Include Scripts\Work\HotstringsSecret.ahk
 
 Load() {
     global A_DropBox := GetParentPath(GetParentPath(A_ScriptDir))
