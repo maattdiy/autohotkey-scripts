@@ -24,3 +24,7 @@ Run cmd as admin (_try Win+X A or Start > cmd and Ctrl+Shift+Enter_) and then th
 * [AutoHotkey trending](https://github.com/trending/autohotkey)
 * [denolfe](https://github.com/denolfe/AutoHotkey)
 * [TaranVH](https://github.com/TaranVH/2nd-keyboard)
+
+## References
+
+* [ShortcutWorld.com](https://shortcutworld.com/)
