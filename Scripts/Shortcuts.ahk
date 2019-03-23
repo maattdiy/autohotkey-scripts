@@ -11,37 +11,30 @@ return
 
 ; Notes
 CapsLock & \::
-CapsLock & Tab::
     Run, chrome.exe -kiosk --profile-directory=Default --app-id=fghmlbbaklalcbeiakgffpodbokndpcj
 return
 
 ; Calculator
-;NumLock::DoubleTapRun("calc")
+CapsLock & 4::Run, calc
 
 ; Cmd
-CapsLock & 3::Run, cmd
+CapsLock & '::Run, cmd
+
+; PowerShell
+CapsLock & Tab::Run, powershell
 
 ; Beyond Compare
-CapsLock & b::Run "C:\Program Files (x86)\Beyond Compare 3\BCompare.exe"
+CapsLock & b::Run, "C:\Program Files (x86)\Beyond Compare 3\BCompare.exe"
 
 ; Mail
-CapsLock & 2::
-    if WinActive("ahk_exe Mailbird.exe")
-        Send, !{F4}
-    else
-        If WinExist("ahk_exe Mailbird.exe")
-            WinActivate
-        else
-            Run "C:\Program Files (x86)\Mailbird\Mailbird.exe"
-return
+CapsLock & 2::#1
 
 ; Notepad++
-CapsLock & Shift::
 CapsLock & Ctrl::
     If WinExist("ahk_exe notepad++.exe")
         WinActivate
     else
-        Run "notepad++"
+        Run, notepad++
 return
 
 ; Folders
@@ -50,24 +43,24 @@ CapsLock & Numpad2::Run, %A_DropBox%\Config
 CapsLock & NumpadDiv::Send, #{NumpadDiv}  ; Directory Opus Tab group Donwloads
 
 ; GitHub
-CapsLock & g::Run, chrome.exe --profile-directory="Profile 1" --app-id=abhpbnbobmlihagcelgdhjmpfkegkmaa
+CapsLock & g::Run, github
+;CapsLock & g::Run, chrome.exe --profile-directory="Profile 1" --app-id=abhpbnbobmlihagcelgdhjmpfkegkmaa
 
 ; WhatsApp
 CapsLock & w::Run, chrome.exe -kiosk --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm
 
-; ================================================================================
-; Utils
-; ================================================================================
+; Visual Studio
+CapsLock & 3::Run, devenv
+
 ; ================================================================================
 ; Utils
 ; ================================================================================
 
 ; Edit file in Notepad++
-
 #if WinActive("ahk_class dopus.lister")
 CapsLock & Space::
     CopyToClipboard2()
-    Run, C:\Program Files (x86)\Notepad++\notepad++.exe "%Clipboard%"
+    Run, notepad++ "%Clipboard%"
 return
 #if
 
@@ -86,3 +79,9 @@ CapsLock & NumpadEnter::
     CopyToClipboard()
     Run, %Clipboard%
 return
+
+; ================================================================================
+; Learn
+; ================================================================================
+
+Ctrl & F9::Run, https://cursos.alura.com.br/dashboard, , Max

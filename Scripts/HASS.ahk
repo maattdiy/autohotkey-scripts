@@ -34,7 +34,7 @@ HASS_Save() {
 }
 
 HASS_SSH(cmd) {
-    Run, "C:\Program Files\PuTTY\plink.exe" -ssh -pw %A_HASS_PWD% root@192.168.0.50
+    Run, plink.exe -ssh -pw %A_HASS_PWD% root@hassio.local
     Sleep 3000
     Send, %cmd%{Enter}
     Sleep 2000
@@ -43,7 +43,7 @@ HASS_SSH(cmd) {
 
 RunHASSWebLocal() {
     SoundBeep
-    Run, chrome.exe --profile-directory=Default --app="https://192.168.0.50:8123/lovelace/0?kiosk&show_tabs", , Max
+    Run, chrome.exe --profile-directory=Default --app="https://hassio.local:8123/lovelace/0?kiosk&show_tabs", , Max
 }
 
 RunHASSWebExternal() {
