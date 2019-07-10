@@ -28,3 +28,4 @@ Run cmd as admin (_try Win+X A or Start > cmd and Ctrl+Shift+Enter_) and then th
 ## References
 
 * [ShortcutWorld.com](https://shortcutworld.com/)
+* [Jack’s AutoHotkey Blog](https://jacksautohotkeyblog.wordpress.com/)
